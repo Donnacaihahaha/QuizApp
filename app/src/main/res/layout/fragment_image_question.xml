@@ -11,7 +11,7 @@
         android:layout_height="248dp"
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/whiteHouseFront"/>
+        android:src="@drawable/White_House_Front"/>
 
     <EditText
         android:layout_width="match_parent"

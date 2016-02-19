@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".scoreActivity"></activity>
+
+        <activity android:name=".scoreActivity" />
     </application>
 
 </manifest>

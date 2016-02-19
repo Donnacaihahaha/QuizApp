@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.TextBasedQuestion">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name of Android version 4.4"
+        android:id="@+id/textView1"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="100dp">
+        <RadioButton
+            android:id="@+id/Radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JellyBean" />
+
+        <RadioButton
+            android:id="@+id/Radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KitKat" />
+        <RadioButton
+            android:id="@+id/Radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Froyo" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_gravity="center" />
+
+</FrameLayout>

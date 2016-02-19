@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.example.appple.quizapp.R;
@@ -18,44 +19,42 @@ import com.example.appple.quizapp.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ImageQuestion.OnFragmentInteractionListener} interface
+ * {@link TextBasedQuestion.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ImageQuestion#newInstance} factory method to
+ * Use the {@link TextBasedQuestion#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ImageQuestion extends Fragment {
-    TextView tv;
+public class TextBasedQuestion extends Fragment {
+
     Button btnNext;
-    String answer = "WHITE HOUSE";
+    RadioButton rb1;
 
-
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        tv =(TextView)getView().findViewById(R.id.textView1);
+        rb1 = (RadioButton)getView().findViewById(R.id.Radio1);
         btnNext = (Button)getView().findViewById(R.id.submitButton);
         final SharedPreferences app_preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor = app.preferences.edit;
-                if (tv.equals(answer)) {
-                    editor.putInt("answer_Value", 1);
-                } else {
+                if(rb1.isChecked()){
+                    editor.putInt("answer_Value1", 1);
+                }else{
                     editor.putInt("answer_Value", 0);
                 }
                 editor.commit();
 
             }
         });
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        return inflater.inflate(R.layout.fragment_image_question, container, false);
+        return inflater.inflate(R.layout.fragment_text_based_question, container, false);
     }
 
 }

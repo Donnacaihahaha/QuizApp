@@ -7,16 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.appple.quizapp.MainActivity">
+    tools:context="com.example.appple.quizapp.scoreActivity">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Begin Quiz"
-        android:id="@+id/beginButton"
-        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/final_score"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick = "startQuiz" />
-
-
+        android:layout_marginTop="61dp" />
 </RelativeLayout>

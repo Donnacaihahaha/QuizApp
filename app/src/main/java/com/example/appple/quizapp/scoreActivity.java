@@ -22,7 +22,7 @@ public class scoreActivity extends AppCompatActivity {
         finalScore = (TextView)findViewById(R.id.final_score);
         Intent intent  = getIntent();
         correct = intent.getExtras().getInt("message1");/////////////////////////////////////////
-        finalScore .setText("Your final result is" + correct + "/2");
+        finalScore .setText("Your final result is  " + correct + "/2");
         restartOne.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent in = new Intent(getApplicationContext(), MainActivity.class);

@@ -7,17 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.appple.quizapp.MainActivity"
-    >
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Begin Quiz"
-        android:id="@+id/beginButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        />
+    android:id="@+id/container"
+    tools:context="com.example.appple.quizapp.startQuiz">
 
 </RelativeLayout>
-

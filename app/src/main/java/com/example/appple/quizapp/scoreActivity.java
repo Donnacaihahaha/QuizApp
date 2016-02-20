@@ -21,7 +21,7 @@ public class scoreActivity extends AppCompatActivity {
         restartOne =(Button) findViewById(R.id.restartButton);
         finalScore = (TextView)findViewById(R.id.final_score);
         Intent intent  = getIntent();
-        intent.getIntExtra("message1",correct);
+        correct = intent.getExtras().getInt("message1");/////////////////////////////////////////
         finalScore .setText("Your final result is" + correct + "/2");
         restartOne.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -32,23 +32,5 @@ public class scoreActivity extends AppCompatActivity {
 
     }
 
-    public void onStart(){
-        super.onStart();
-    }
-   // public void initControls(){
-        //finalscore = (TextView)findViewById(R.id.final_score);
-       // finalscore = 0;
-        //final SharedPreferences app_preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        //int q1answer = app_preferences.getInt("answer_Value",0);
-        //int q2answer = app_preferences.getInt("answer_Value1",0);
-       // if(q1answer == 1){
-        //    finalscore++;
-       // }
-       // if(q2answer == 1){
-        //    finalscore++;
-       // }
-       // final_score.setText(finalscore + "/2");
-
-   // }
 
 }

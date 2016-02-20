@@ -6,36 +6,37 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ImageView
-        android:layout_width="248dp"
-        android:layout_height="248dp"
-        android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/White_House_Front"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/question"
-        android:layout_gravity="center"
-        android:text="What's the name of the building? Please capitalize all letters without any blank space " />
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/userAnswer"
-        android:layout_marginBottom="120dp"
-        android:layout_gravity="left|bottom"
-        android:hint="Please enter your answer" />
+        android:hint="Please enter your answer"
+        android:layout_marginTop="350dp"
+        android:layout_gravity="left" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="0dp"
         android:id="@+id/nextButton"
         android:layout_gravity="center_horizontal|bottom" />
+
+    <ImageView
+        android:layout_width="248dp"
+        android:layout_height="248dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/white_house"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:id="@+id/question"
+        android:layout_gravity="left|top"
+        android:text="What&apos;s the name of the building? Please capitalize all letters"
+        android:layout_marginTop="250dp" />
 
 
 </FrameLayout>
